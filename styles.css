@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: white;
+  font-size: 0.8em;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+h2 {
+  margin: 10px 0;
+}
+
+/* header */
+#header {
+  position: fixed;
+  top: 0;
+  right: 0;   
+  width: 100%;
+  background-color: #eFeFeF;
+  display: flex;
+  z-index: 1;
+}
+#header-img {
+  max-width: 150px;
+  margin: 5px 20px 5px 50px;
+}
+
+/* navigation */
+nav {
+  width: 100%;
+}
+ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  aligh-items: center;
+  @media(max-width: 570px) {
+    flex-direction: column;
+  }
+}
+li {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  min-width: 120px;
+  min-height: 40px;
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  border: 1px solid white;
+  @media(max-width: 570px) {
+    min-height: auto;
+  }
+}
+li:hover {
+  background-color: #a0a0a0;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* content */
+#details {
+  margin-top: 90px;
+  display: flex;
+  @media(max-width: 570px) {
+    flex-direction: column;
+  }
+}
+#main-img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  transition: all 600ms ease-in-out;
+}
+#main-img:hover {
+  transform: scale(1.1);
+  z-index: 2;
+}
+#image {
+  overflow: hidden;
+}
+#image, #description {
+  flex: 0 1 50%;    
+}
+#description, #instructions, #watchvideo>h2 {
+  padding: 15px 15px 0 15px;
+}
+#video-block {
+  display: flex;
+  flex-wrap: wrap;
+  @media(max-width: 570px) {
+    flex-direction: column;
+  }
+}
+#video1, #video2 {
+  flex: 1 1 50%;
+  display: blok;
+  max-width: 100%;
+  height: auto;
+}
+iframe {
+  width: 100%;
+}
+
+/* form */
+form {
+  margin-top: 20px;
+}
+input {
+  height: 30px;
+  max-width: 200px;
+  width: 100%;
+  padding: 5px;
+}
+#submit {
+  color: white;
+  text-transform: uppercase;
+  margin: 10px 0;
+  border: 0;
+  background-color: #a0a0a0;
+}
+#submit:hover {
+  background-color: #000000;
+}
+
+/* footer */
+.copyright {
+  text-align: right;
+  font-size: 0.8em;
+  padding: 3px 20px 5px 10px;
+}

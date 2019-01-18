@@ -98,20 +98,16 @@ a {
   padding: 15px 15px 0 15px;
 }
 #video-block {
-  display: flex;
-  flex-wrap: wrap;
-  @media(max-width: 570px) {
-    flex-direction: column;
-  }
-}
-#video1, #video2 {
-  flex: 1 1 50%;
-  display: blok;
-  max-width: 100%;
-  height: auto;
-}
-iframe {
+  position: relative;
   width: 100%;
+  padding-bottom: 56.25%;
+  }
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /* form */

@@ -98,10 +98,12 @@ a {
   padding: 15px 15px 0 15px;
 }
 #video-block {
-  position: relative;
-  width: 100%;
-  padding-bottom: 56.25%;
+  display: flex;
+  flex-wrap: wrap;
+  @media(max-width: 570px) {
+    flex-direction: column;
   }
+}
 .video-container {
   flex: 1 1 50%;
   }
